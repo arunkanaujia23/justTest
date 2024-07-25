@@ -4,10 +4,10 @@ import React from 'react'
 const Home = async() => {
     const response = await fetch(`https://fakestoreapi.com/products/categories`);
     const data = await response.json();
-    console.log(data)
+
   return (
-    <div className='container mx-auto'>
-        <div className='grid grid-cols-4 gap-5'>
+    <div className='container mx-auto h-[500px] flex items-center justify-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center'>
             {
                 data?.map((data, index) => {
                     return (

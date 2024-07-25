@@ -7,7 +7,7 @@ const CategoryPage = async ({ params }) => {
     `https://fakestoreapi.com/products/category/${params?.category}`
   );
   const data = await response.json();
-  console.log(params);
+
   
   return <ProductList value={data} />;
 };
