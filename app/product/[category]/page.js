@@ -9,7 +9,7 @@ const CategoryPage = async ({ params }) => {
   const data = await response.json();
   console.log(params);
   
-  return <ProductList data={data} />;
+  return <ProductList value={data} />;
 };
 
 export default CategoryPage;
