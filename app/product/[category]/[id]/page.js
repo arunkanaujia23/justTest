@@ -1,8 +1,17 @@
+import ProductCard from '@/app/Components/ProductCard/ProductCard';
 import React from 'react'
 
-const IdPage = () => {
+const IdPage = async ({params}) => {
+  // https://fakestoreapi.com/products/category/jewelery
+  const response = await fetch(`https://fakestoreapi.com/products/${params?.id}`)
+  const data = await response.json();
+  console.log(params)
+  console.log(data)
   return (
-    <div>IdPage</div>
+    <div className='container mx-auto '>
+      <ProductCard item={data}/>
+      
+    </div>
   )
 }
 
