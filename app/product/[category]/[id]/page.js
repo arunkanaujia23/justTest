@@ -7,7 +7,7 @@ const IdPage = async ({params}) => {
   const data = await response.json();
 
   return (
-    <div className='container mx-auto '>
+    <div className='container mx-auto px-5'>
       <ProductCard item={data}/>
       
     </div>

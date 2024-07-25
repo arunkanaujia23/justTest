@@ -15,7 +15,7 @@ const ProductCard = ({ item }) => {
 
       </div>
       <div className="px-6 py-4 mb-2 h-full">
-        <div className='flex  mb-4 justify-between items-center'>
+        <div className='flex justify-between items-center'>
           <div>
             <Link href={`/product/${item?.category}/${item?.id}`} className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out    truncate w-64">{item?.title}</Link>
           </div>
